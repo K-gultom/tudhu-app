@@ -89,7 +89,7 @@ class todoController extends Controller
         $saveTodo->save();
         // dd($saveTodo);
 
-        Alert::warning(
+        Alert::success(
             'Success Edit', 
             'Todo berhasil diperbaharui'
         );

@@ -21,6 +21,7 @@
     
             main {
                 flex: 1;
+                padding-bottom: 50px;
             }
     
             .text {
@@ -42,6 +43,16 @@
 
             .navbar-toggler:focus {
                 box-shadow: none; /* Menghapus efek fokus */
+            }
+            
+            .footer {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background-color: #f8f9fa;
+                padding: 10px;
+                text-align: center;
             }
 
         </style>
@@ -95,7 +106,7 @@
             @yield('content')
         </main>
     
-        <footer class="text-center p-2 bg-light">
+        <footer class="footer text-center p-2 bg-light">
             <p>&copy; {{ date('Y') }} GH Academy & Partner. Copyright</p>
         </footer>
     

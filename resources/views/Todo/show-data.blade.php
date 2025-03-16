@@ -21,7 +21,7 @@
                                     <div class="invalid-feedback">
                                         {{ $message }}
                                     </div>
-                                @enderror
+                                @enderror 
                             </div>
                         </div>
                         <div class="mb-2">

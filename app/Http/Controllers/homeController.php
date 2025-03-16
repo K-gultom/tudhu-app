@@ -17,11 +17,12 @@ class homeController extends Controller
         $getIdUser = Auth::user()->id;
 
         $getData = todo::where('user_id', $getIdUser)
-        ->orderBy('tanggal', 'desc')
+        ->orderBy('tanggal', 'asc')
         ->get();
         
-        // dd($getData);
-        return view('Home.home', compact('getData'));
+        return view('Home.home', compact(
+            'getData',
+        ));
     }
 
     /**
